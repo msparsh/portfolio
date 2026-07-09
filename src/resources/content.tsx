@@ -5,7 +5,7 @@ const person: Person = {
   firstName: "Sparsh",
   lastName: "Mishra",
   name: `Sparsh Mishra`,
-  role: "Design Engineer", // TODO
+  role: "Mathematician & Developer", // TODO
   avatar: "/images/avatar.jpg", // TODO
   email: "avidunable@gmail.com",
   location: "Asia/Kolkata", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
@@ -16,7 +16,7 @@ const person: Person = {
 const newsletter: Newsletter = {
   display: true,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: <>My weekly newsletter about creativity and engineering</>,
+  description: <>My newsletter about creativity and engineering</>,
 };
 
 const social: Social = [
@@ -65,11 +65,11 @@ const home: Home = {
   },
   subline: (
     <>
-      I'm {person.firstName}, a {person.role.toLowerCase()} at{" "}
+      I'm {person.firstName}, a {person.role.toLowerCase()}, a student at{" "}
       <Text as="span" size="xl" weight="strong">
-        ONCE UI
+        IIT Gandhinagar
       </Text>
-      , where I craft intuitive <br /> user experiences. After hours, I build my own projects.
+      . I build clean, logical systems and explore the intersection of algorithm design, machine learning, and .{" "}
     </>
   ),
 };
@@ -96,8 +96,9 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        {person.firstName} is a {person.location.split("/")[1]?.replace("_", " ")}-based {person.role.toLowerCase()} with a passion for transforming complex challenges into simple,
-        elegant design solutions. Their work spans digital interfaces, interactive experiences, and the convergence of design and technology.
+        {person.firstName} bridges advanced mathematics and artificial intelligence. With a foundation in algorithm design and logical architecture, their work explores the space
+        where structured data meets intuitive digital experiences. Beyond technology, they are an avid reader and writer, finding that journaling and music bring clarity,
+        perspective, and effective communication to their technical pursuits.
       </>
     ),
   },
@@ -106,33 +107,53 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Nyasa, IIT Gandhinagar",
+        timeframe: "May 2026 - Present",
+        role: "Organizing Member",
         achievements: [
-          <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
-          <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>,
-        ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
-        achievements: [
-          <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
-          <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>,
+          <>Drive initiatives across the outreach, website, and editorial teams to foster community engagement.</>,
+          <>Focus on clear communication and structuring information to elevate the organization's digital presence.</>,
         ],
         images: [],
       },
+      {
+        company: "Technical Council, IIT Gandhinagar",
+        timeframe: "May 2026 - Present",
+        role: "Council Member",
+        achievements: [
+          <>Contribute to the strategic direction and organization of technical programs within the institute.</>,
+          <>Cultivate a culture of collaboration, continuous learning, and innovation among peers.</>,
+        ],
+        images: [],
+      },
+      {
+        company: "Mental Health Foundation India",
+        timeframe: "Jan 2025 - Apr 2025",
+        role: "Data Science Intern",
+        achievements: [
+          <>Leveraged analytical foundations to streamline workflows and improve organizational efficiency.</>,
+          <>Translated complex, large-scale information into clear, actionable insights for better decision-making.</>,
+        ],
+        images: [],
+      },
+      // {
+      //   company: "FLY",
+      //   timeframe: "2022 - Present",
+      //   role: "Senior Design Engineer",
+      //   achievements: [
+      //     <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
+      //     <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>,
+      //   ],
+      //   images: [
+      //     // optional: leave the array empty if you don't want to display images
+      //     {
+      //       src: "/images/projects/project-01/cover-01.jpg",
+      //       alt: "Once UI Project",
+      //       width: 16,
+      //       height: 9,
+      //     },
+      //   ],
+      // },
     ],
   },
   studies: {
@@ -140,12 +161,12 @@ const about: About = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "IIT Gandhinagar",
+        description: <>Master of Science in Mathematics (Jul 2025 - Jul 2027). Focused on advanced problem-solving, abstract logic, and theoretical foundations.</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "University of Delhi",
+        description: <>Bachelor of Science in Mathematics (Jan 2022 - Jun 2025). Developed a rigorous background in analytical thinking and quantitative systems.</>,
       },
     ],
   },
