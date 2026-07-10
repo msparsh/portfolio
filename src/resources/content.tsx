@@ -6,7 +6,7 @@ const person: Person = {
   lastName: "Mishra",
   name: `Sparsh Mishra`,
   role: "Mathematician & Developer", // TODO
-  avatar: "/images/avatar.jpg", // TODO
+  avatar: "/images/profile.jpg", // TODO
   email: "avidunable@gmail.com",
   location: "Asia/Kolkata", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Hindi"], // optional: Leave the array empty if you don't want to display languages
@@ -16,7 +16,7 @@ const person: Person = {
 const newsletter: Newsletter = {
   display: true,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: <>My newsletter about creativity and engineering</>,
+  description: <>Creative intuition. Mathematical precision. A newsletter at the crossroads of both.</>,
 };
 
 const social: Social = [
@@ -50,7 +50,7 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>, // TODO
+  headline: <>Work In Progress. Mathematical Precision. Architected Intelligence.</>, // TODO
   featured: {
     display: true,
     title: (
@@ -65,11 +65,11 @@ const home: Home = {
   },
   subline: (
     <>
-      I'm {person.firstName}, a {person.role.toLowerCase()}, a student at{" "}
+      I'm {person.firstName}, a {person.role.toLowerCase()}, and a student at{" "}
       <Text as="span" size="xl" weight="strong">
         IIT Gandhinagar
       </Text>
-      . I build clean, logical systems and explore the intersection of algorithm design, machine learning, and .{" "}
+      . I construct streamlined, highly structured architectures, focusing on the space where advanced code mechanics meet adaptive software to power high-performance technology.
     </>
   ),
 };
@@ -96,9 +96,11 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        {person.firstName} bridges advanced mathematics and artificial intelligence. With a foundation in algorithm design and logical architecture, their work explores the space
-        where structured data meets intuitive digital experiences. Beyond technology, they are an avid reader and writer, finding that journaling and music bring clarity,
-        perspective, and effective communication to their technical pursuits.
+        {person.firstName} bridges advanced mathematics and artificial intelligence. With a foundation in algorithm design and logical architecture, his work explores the space
+        where data meets intuitive digital experiences.
+        <br />
+        <br />
+        Away from code, he immerses himself in reading, writing, and music, finding they bring vital clarity, perspective, and articulation to his technical execution.
       </>
     ),
   },
@@ -162,11 +164,21 @@ const about: About = {
     institutions: [
       {
         name: "IIT Gandhinagar",
-        description: <>Master of Science in Mathematics (Jul 2025 - Jul 2027). Focused on advanced problem-solving, abstract logic, and theoretical foundations.</>,
+        description: (
+          <>
+            Master of Science in Mathematics (Jul 2025 - Present). <br />
+            Focused on advanced problem-solving, abstract logic, and theoretical foundations.
+          </>
+        ),
       },
       {
         name: "University of Delhi",
-        description: <>Bachelor of Science in Mathematics (Jan 2022 - Jun 2025). Developed a rigorous background in analytical thinking and quantitative systems.</>,
+        description: (
+          <>
+            Bachelor of Science in Mathematics (Jan 2022 - Jun 2025). <br />
+            Developed a rigorous background in analytical thinking and quantitative systems.
+          </>
+        ),
       },
     ],
   },
@@ -256,6 +268,22 @@ const gallery: Gallery = {
   // Images by https://lorant.one
   // These are placeholder images, replace with your own
   images: [
+    {
+      src: "/images/gallery/notes.png",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/log.png",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/cat.png",
+      alt: "image",
+      orientation: "horizontal",
+    },
+
     {
       src: "/images/gallery/horizontal-1.jpg",
       alt: "image",
